@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use("/api", productRoute);
 
-const live_Uri = "mongodb+srv://EngrHenry:engrakpan@cluster.wavse.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
+const live_Uri = "mongodb+srv://EngrHenry:engrakpan@cluster.wavse.mongodb.net/USER_AUTH?retryWrites=true&w=majority&appName=Cluster"
 mongoose.connect(live_Uri)
 .then(()=> console.log("MongoDB Connected to this Server"))
 .catch(err=> console.error("Connection Error:", err));
