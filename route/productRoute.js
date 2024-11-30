@@ -3,7 +3,7 @@ const express = require('express');
 
 const productRoute = express.Router();
 
-// userRoutes.post("/new-user" , userController.createUser)
+
 productRoute.post('/upload-product', productController.createproduct);
 productRoute.get('/get-all-product', productController.getAllProducts);
 productRoute.get('/get-one-product/:id', productController.getOneById);
